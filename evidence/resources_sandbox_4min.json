@@ -1,0 +1,9 @@
+{
+ "seconds": 240,
+ "avg_cpu_percent_of_one_core": 1.46,
+ "peak_rss_mb": 25.9,
+ "disk_written_mb_(process write_bytes)": 66.2,
+ "db_size_mb": 12.9,
+ "network_sent_mb_(app level, cumulative since start)": 1.19,
+ "network_recv_mb_(app level, cumulative since start)": 0.29
+}

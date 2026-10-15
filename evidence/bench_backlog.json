@@ -1,0 +1,9 @@
+{
+ "hours_of_backlog": 2.0,
+ "samples": 5760000,
+ "cloud_rows": 5760000,
+ "seconds_to_sync": 61,
+ "samples_per_second": 94269,
+ "within_15_min": true,
+ "exactly_once": true
+}

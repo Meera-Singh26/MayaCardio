@@ -1,0 +1,53 @@
+{
+ "sessions": [
+  "362ea6e5",
+  "0da97501"
+ ],
+ "362ea6e5": {
+  "ground_truth_ok": true,
+  "errors": [],
+  "summary": {
+   "s1": {
+    "samples": 39037,
+    "lost_idx": 0,
+    "open_loss_from": 39037
+   },
+   "s2": {
+    "samples": 39040,
+    "lost_idx": 0,
+    "open_loss_from": 39040
+   }
+  },
+  "loss_lines": [
+   {
+    "sensor": 1,
+    "from_index": 39037,
+    "to_index": null,
+    "reason": "session_restart_unread_data_unknown_end"
+   },
+   {
+    "sensor": 2,
+    "from_index": 39040,
+    "to_index": null,
+    "reason": "session_restart_unread_data_unknown_end"
+   }
+  ]
+ },
+ "0da97501": {
+  "ground_truth_ok": true,
+  "errors": [],
+  "summary": {
+   "s1": {
+    "samples": 40000,
+    "lost_idx": 0,
+    "open_loss_from": null
+   },
+   "s2": {
+    "samples": 40000,
+    "lost_idx": 0,
+    "open_loss_from": null
+   }
+  },
+  "loss_lines": []
+ }
+}

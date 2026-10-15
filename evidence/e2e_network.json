@@ -1,0 +1,213 @@
+{
+ "mode_events": [
+  [
+   1.1,
+   "mode_online",
+   "cloud reachable"
+  ],
+  [
+   29.1,
+   "mode_offline",
+   "TimeoutError('timed out')"
+  ],
+  [
+   68.2,
+   "mode_online",
+   "cloud reachable"
+  ],
+  [
+   85.1,
+   "mode_offline",
+   "BrokenPipeError(32, 'Broken pipe')"
+  ],
+  [
+   106.2,
+   "mode_online",
+   "cloud reachable"
+  ],
+  [
+   128.1,
+   "mode_online",
+   "cloud reachable"
+  ]
+ ],
+ "marks": [
+  [
+   "cut_blackhole",
+   25.0
+  ],
+  [
+   "restore_1",
+   65.0
+  ],
+  [
+   "cut_refuse",
+   85.0
+  ],
+  [
+   "restore_2",
+   105.0
+  ],
+  [
+   "kill9_pipeline",
+   125.0
+  ],
+  [
+   "restart_pipeline",
+   127.0
+  ]
+ ],
+ "detect_offline_after_blackhole_s": 4.1,
+ "back_online_after_restore_1_s": 3.2,
+ "detect_offline_after_refuse_s": 0.1,
+ "back_online_after_restore_2_s": 1.2,
+ "online_windows": 132,
+ "online_latency_s": {
+  "max": 0.36,
+  "p50": 0.22,
+  "over_5s": 0
+ },
+ "offline_windows": 68,
+ "ground_truth_device": {
+  "session": "52e6b438",
+  "ok": true,
+  "summary": {
+   "s1": {
+    "samples": 80000,
+    "lost_idx": 0,
+    "open_loss_from": null
+   },
+   "s2": {
+    "samples": 80000,
+    "lost_idx": 0,
+    "open_loss_from": null
+   }
+  },
+  "errors": []
+ },
+ "ground_truth_cloud": {
+  "session": "52e6b438",
+  "ok": true,
+  "summary": {
+   "s1": {
+    "samples": 80000,
+    "lost_idx": 0,
+    "open_loss_from": null
+   },
+   "s2": {
+    "samples": 80000,
+    "lost_idx": 0,
+    "open_loss_from": null
+   }
+  },
+  "errors": []
+ },
+ "cloud_equals_device_export": true,
+ "verify_device": {
+  "session": "52e6b438",
+  "windows_checked": 200,
+  "mismatches": 0,
+  "examples": []
+ },
+ "verify_cloud": {
+  "session": "52e6b438",
+  "windows_checked": 200,
+  "mismatches": 0,
+  "examples": []
+ },
+ "status": {
+  "mode": "online",
+  "last_mode": "online",
+  "daemon_running": true,
+  "session": "52e6b438",
+  "samples_saved": 160000,
+  "samples_in_cloud": 160000,
+  "backlog": 0,
+  "lost_samples": 0,
+  "per_sensor_saved": {
+   "1": 80000,
+   "2": 80000
+  },
+  "all_sessions": {
+   "count": 1,
+   "samples_saved": 160000,
+   "samples_in_cloud": 160000,
+   "backlog": 0
+  },
+  "mode_since": 1792054551.683534,
+  "bytes_sent": 408725,
+  "bytes_recv": 103058
+ },
+ "events_sample": [
+  [
+   0.1,
+   "mock_connected",
+   "127.0.0.1:7100"
+  ],
+  [
+   0.1,
+   "session_start",
+   "52e6b438"
+  ],
+  [
+   1.1,
+   "mode_online",
+   "cloud reachable"
+  ],
+  [
+   1.1,
+   "online_epoch",
+   "52e6b438 epoch 1 own_from 1"
+  ],
+  [
+   29.1,
+   "mode_offline",
+   "TimeoutError('timed out')"
+  ],
+  [
+   68.2,
+   "mode_online",
+   "cloud reachable"
+  ],
+  [
+   68.2,
+   "online_epoch",
+   "52e6b438 epoch 2 own_from 68"
+  ],
+  [
+   85.1,
+   "mode_offline",
+   "BrokenPipeError(32, 'Broken pipe')"
+  ],
+  [
+   106.2,
+   "mode_online",
+   "cloud reachable"
+  ],
+  [
+   106.2,
+   "online_epoch",
+   "52e6b438 epoch 3 own_from 106"
+  ],
+  [
+   127.1,
+   "mock_connected",
+   "127.0.0.1:7100"
+  ],
+  [
+   128.1,
+   "mode_online",
+   "cloud reachable"
+  ],
+  [
+   128.1,
+   "online_epoch",
+   "52e6b438 epoch 4 own_from 128"
+  ],
+  [
+   199.4,
+   "session_ended",
+   "52e6b438"
+  ]
+ ]
+}

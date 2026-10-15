@@ -1,0 +1,15 @@
+# Render.com blueprint (free web service). Set PIPELINE_API_KEY in the dashboard.
+# NOTE: free instances have an ephemeral disk; the device re-syncs everything it is missing
+# (reconcile on reconnect), so a cloud wipe never loses data - it only costs a re-upload.
+services:
+  - type: web
+    name: mayacardio-cloud
+    runtime: docker
+    dockerfilePath: ./deploy/Dockerfile
+    plan: free
+    healthCheckPath: /v1/health
+    envVars:
+      - key: PIPELINE_API_KEY
+        sync: false
+      - key: PIPELINE_CLOUD_DB
+        value: /tmp/cloud.db

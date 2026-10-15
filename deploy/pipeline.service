@@ -1,0 +1,21 @@
+# Device daemon: starts on boot, restarts after crash, limited to Pi-class resources.
+# sudo cp deploy/pipeline.service /etc/systemd/system/ && sudo systemctl enable --now pipeline
+[Unit]
+Description=MayaCardio pipeline (device)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/opt/mayacardio-pipeline
+Environment=PIPELINE_DATA_DIR=/var/lib/mayacardio
+Environment=PIPELINE_CLOUD_URL=https://YOUR-CLOUD-HOST
+Environment=PIPELINE_API_KEY=CHANGE-ME
+ExecStart=/opt/mayacardio-pipeline/bin/pipeline run
+Restart=always
+RestartSec=1
+CPUQuota=400%
+MemoryMax=1500M
+
+[Install]
+WantedBy=multi-user.target
